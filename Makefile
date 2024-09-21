@@ -7,9 +7,9 @@ QMD_FILES := $(wildcard *.qmd)
 
 .PHONY: all html clean realclean
 
-all: _output
+all: html
 
-_output:
+html:
 	quarto render --to html
 	$(PRINT) "_output done."
 

@@ -3,6 +3,9 @@
 My first example of using quarto, following the quarto
 [Get Started](https://quarto.org/docs/get-started/hello/text-editor.html).
 
+You can see the rendered website here:        
+<https://rreece.github.io/quarto-example/>
+
 
 ## See also
 

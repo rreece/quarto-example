@@ -3,21 +3,18 @@
 PRINT = @echo '==>  '
 
 QMD_FILES := $(wildcard *.qmd)
-HTML_FILES := $(QMD_FILES:%.qmd=%.html)
-HTML_FILES_DIRS := $(QMD_FILES:%.qmd=%_files)
+#HTML_FILES := $(QMD_FILES:%.qmd=%.html)
 
-.PHONY: all html
+.PHONY: all html clean realclean
 
-all: html
+all: _output
 
-html: $(HTML_FILES)
-	$(PRINT) "html done."
-
-%.html: %.qmd
-	quarto render $< --to html
+_output:
+	quarto render --to html
+	$(PRINT) "_output done."
 
 JUNK = *.log
-OUTS = $(HTML_FILES) $(HTML_FILES_DIRS)
+OUTS = _output
 
 clean:
 	@rm -f $(JUNK)

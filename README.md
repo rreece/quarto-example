@@ -1,6 +1,7 @@
 # quarto-example
 
-My first example of using quarto
+My first example of using quarto, following the quarto
+[Get Started](https://quarto.org/docs/get-started/hello/text-editor.html).
 
 
 ## See also

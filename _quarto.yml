@@ -1,3 +1,18 @@
 project:
-  type: default
+  type: website
   output-dir: _output
+
+website:
+  title: "today"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+format:
+  html:
+    theme: flatly
+#    toc: true
+    fontsize: 1.2em
+

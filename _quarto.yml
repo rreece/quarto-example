@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Quarto Static Example"
+  title: "Quarto Example"
   navbar:
     search: true
     left:
@@ -12,7 +12,7 @@ website:
       - icon: twitter
         href: https://x.com/RyanDavidReece
       - icon: github
-        href: https://github.com/rreece/quarto-example-static
+        href: https://github.com/rreece/quarto-example
   sidebar:
     style: "docked"
     contents:

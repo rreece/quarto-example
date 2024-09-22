@@ -1,0 +1,7 @@
+---
+title: "Quarto Static Example"
+date: today
+---
+
+Title page.
+

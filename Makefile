@@ -11,10 +11,10 @@ all: html
 
 html:
 	quarto render --to html
-	$(PRINT) "_output done."
+	$(PRINT) "html done."
 
 JUNK = *.log
-OUTS = _output
+OUTS = docs
 
 clean:
 	@rm -f $(JUNK)

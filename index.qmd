@@ -6,9 +6,9 @@ technical and scholarly writing flow in a Markdown-driven way.
 Managing figures, tables, equations, and bibliographies.
 Generating html, latex, or pdf.
 
-I had previous hand-rolled my own projects to this:
+I had my own previous hand-rolled projects to do this:
 [markdown-memo](https://github.com/rreece/markdown-memo),
-which I was trying to trim down into
+which I was trying to update and trim down into
 [markdown-easy](https://github.com/rreece/markdown-easy).
 
 Then I discovered the [quarto](https://quarto.org)

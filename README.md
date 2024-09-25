@@ -49,7 +49,7 @@ TODOs
 ----------------------------------
 
 - [ ] [Issue](https://github.com/quarto-dev/quarto-cli/issues/2275) with labeling equation in `align` for pdf
-- [ ] Add `_quarto.yaml` settings for custom css
+- [x] Add `_quarto.yaml` settings for custom css
 - [ ] Add `_quarto.yaml` settings for latex styling
 
 

@@ -22,8 +22,15 @@ Maybe it's a blog, research paper, book draft, or just a set of notes.
 You don't want to think about typesetting details.
 You just want to throw your ideas in some plain text files and call `make`.
 
+This package makes it very easy to compile text taken in
+[Markdown](https://daringfireball.net/projects/markdown/)
+to valid xhtml or to a pdf via LaTeX.
+It can be used to make simple webpages quickly,
+for example (this site):   
+<http://rreece.github.io/sw/markdown-memo/>
+
 See the README for [quarto-example](https://github.com/rreece/quarto-example)
-for how to compile the document to html or pdf.
+for how to compile this document to html or pdf.
 
 
 See also

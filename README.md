@@ -1,7 +1,8 @@
 quarto-example
 ====================================
 
-[![pages deployment](https://github.com/rreece/quarto-example/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/rreece/quarto-example/actions/workflows/pages/pages-build-deployment)
+[![pages build & deploy](https://github.com/rreece/quarto-example/actions/workflows/pages.yml/badge.svg)](https://github.com/rreece/quarto-example/actions/workflows/pages.yml)
+
 
 Easy way to compile markdown into documents.
 

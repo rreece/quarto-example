@@ -55,8 +55,7 @@ clean:
 	$(PRINT) "make $@ done."
 
 ## clean up everything including the output
-#OUTS = _site _freeze jupyter_files bibs/mybib.bib
-OUTS = _site _freeze jupyter_files
+OUTS = _site _freeze jupyter_files bibs/mybib.bib
 
 realclean: clean
 	rm -rf $(OUTS)

@@ -15,7 +15,8 @@ Maybe it's a blog, research paper, book draft, or just a set of notes.
 You don't want to think about typesetting details.
 You just want to throw your ideas in some plain text files and call `make`.
 
-This is my first example of using quarto, following the quarto
+This is my first example of using [quarto](https://quarto.org/),
+following the quarto
 [Get Started](https://quarto.org/docs/get-started/hello/text-editor.html).
 
 You can see the rendered website here:

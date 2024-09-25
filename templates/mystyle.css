@@ -1,0 +1,39 @@
+/*** Ryan's CSS style for markdown notes with quarto ***/
+
+/* colors used -------------------------------------------------
+-   #444444 - gray - main text
+-   #000000 - black - headers
+-   #0099ff - link
+-   red - link hover
+-   purple  - link visited
+-   #cccccc - light gray - quote block, caption
+-   white   - ...
+
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-family: Georgia, Palatino, serif;
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+*/
+
+
+/* blocks ---------------------------------------------------------- */
+pre {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-top: 2px solid black;
+    border-right: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
+    border-left: 2px solid black;
+    padding: 10px 10px;
+    max-width: 700px;
+    white-space: pre-wrap;
+    background-color: #444444;
+    color: white;
+}
+code {
+    font-family: Consolas, Monaco, "Andale Mono", monospace;
+    line-height: 16px;
+    font-size: 12px;
+    text-align: left;
+}
+
+

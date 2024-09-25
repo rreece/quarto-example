@@ -117,6 +117,7 @@ format:
     theme:
       light: flatly
       dark: darkly
+    css: templates/mystyle.css
     toc: true
     toc-depth: 2
     toc-title: "Contents"

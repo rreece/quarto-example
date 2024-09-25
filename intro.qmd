@@ -26,8 +26,11 @@ This package makes it very easy to compile text taken in
 [Markdown](https://daringfireball.net/projects/markdown/)
 to valid xhtml or to a pdf via LaTeX.
 It can be used to make simple webpages quickly,
-for example (this site):   
-<http://rreece.github.io/sw/markdown-memo/>
+for example (this site):    
+<https://rreece.github.io/quarto-example/>
+
+This same document compiled to a pdf can be found here:    
+<https://rreece.github.io/quarto-example/Quarto-Example.pdf>
 
 See the README for [quarto-example](https://github.com/rreece/quarto-example)
 for how to compile this document to html or pdf.

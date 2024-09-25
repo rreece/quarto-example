@@ -1,4 +1,4 @@
-name: Quarto Publish
+name: "quarto build & gh-pages deploy"
 
 on:
   workflow_dispatch:

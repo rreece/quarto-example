@@ -47,7 +47,6 @@ Just call `make pdf`
 TODOs
 ----------------------------------
 
-- [ ] Sync this with my quarto-example repo
 - [ ] [Issue](https://github.com/quarto-dev/quarto-cli/issues/2275) with labeling equation in `align` for pdf
 - [ ] Add `_quarto.yaml` settings for custom css
 - [ ] Add `_quarto.yaml` settings for latex styling
@@ -74,7 +73,6 @@ Quarto links:
 
 My projects:
 
--   [github.com/rreece/quarto-example](https://github.com/rreece/quarto-example)
 -   [github.com/rreece/markdown-easy](https://github.com/rreece/markdown-easy)
 -   [github.com/rreece/markdown-memo](https://github.com/rreece/markdown-memo)
 

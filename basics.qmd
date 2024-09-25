@@ -9,23 +9,23 @@ A further reference on Markdown syntax by its creator is
 [here](http://daringfireball.net/projects/markdown/syntax).
 
 
-Sections {#sec:sections}
+Sections {#sec-sections}
 -------------------------------------------------------------------------------
 
 Are markded like this:
 
-    Section title {#sec:put-optional-section-label-here}
+    Section title {#sec-put-optional-section-label-here}
     ===============================================================================
 
-    Sub-section title {#sec:put-optional-sub-section-label-here}
+    Sub-section title {#sec-put-optional-sub-section-label-here}
     -------------------------------------------------------------------------------
 
 
 Or marked like this:
 
-    # Section title {#sec:put-optional-section-label-here}
+    # Section title {#sec-put-optional-section-label-here}
 
-    ## Sub-section title {#sec:put-optional-sub-section-label-here}
+    ## Sub-section title {#sec-put-optional-sub-section-label-here}
  
     ### Sub-sub-section title
 
@@ -34,12 +34,12 @@ Or marked like this:
 Note the examples of labeling a section in braces with `#`, as shown above.
 This allows one to refer to labels in the text like:
 
-    The next section, [@sec:lists], is about lists.
+    The next section, @sec-lists, is about lists.
 
-The next section, [@sec:lists], is about lists.
+The next section, @sec-lists, is about lists.
 
 
-Lists {#sec:lists}
+Lists {#sec-lists}
 -------------------------------------------------------------------------------
 
 **Unnumbered lists** like this:
@@ -67,7 +67,7 @@ Lists {#sec:lists}
 1.  Relativists
 
 
-Blocks {#sec:blocks}
+Blocks {#sec-blocks}
 -------------------------------------------------------------------------------
 
 The following is a **quote block**. 
@@ -120,6 +120,40 @@ which makes:
     bubble_sort(alist)
     print(alist)
 
+Or you can wrap code blocks in three backticks, without indenting:
+
+    ```
+    def online_covariance(data1, data2):
+        meanx = meany = C = n = 0
+        for x, y in zip(data1, data2):
+            n += 1
+            dx = x - meanx
+            meanx += dx / n
+            meany += (y - meany) / n
+            C += dx * (y - meany)
+    
+        population_covar = C / n
+        # Bessel's correction for sample variance
+        sample_covar = C / (n - 1)
+    ```
+
+which makes:
+
+```
+def online_covariance(data1, data2):
+    meanx = meany = C = n = 0
+    for x, y in zip(data1, data2):
+        n += 1
+        dx = x - meanx
+        meanx += dx / n
+        meany += (y - meany) / n
+        C += dx * (y - meany)
+
+    population_covar = C / n
+    # Bessel's correction for sample variance
+    sample_covar = C / (n - 1)
+```
+
 Maybe you want to refer to **code inline** like this with backticks:
 
     Here's some inline code: `vec.push_back(3.14)`.
@@ -156,7 +190,7 @@ A **horizontal rule** can be made by just writing some number of dashes:
 Boom.
 
 
-Fonts {#sec:fonts}
+Fonts {#sec-fonts}
 -------------------------------------------------------------------------------
 
     -   *This is emphasis.*
@@ -177,7 +211,7 @@ produces:
 -   __This is bold *and* emphasis.__
 -   ~~This is struck-out.~~
 
-Don't do these. These will work in LaTeX (\LaTeX) but may not in html.
+Don't do these. These will work in LaTeX but may not in html.
 
     -   \textsf{This should be Sans.}
     -   \textsc{This Should BE SMALL caps.}
@@ -185,7 +219,7 @@ Don't do these. These will work in LaTeX (\LaTeX) but may not in html.
     -   $\textsc{But this does not!}$
 
 
-Links and labels {#sec:links-and-labels}
+Hyperlinks {#sec-hyperlinks}
 -------------------------------------------------------------------------------
 
 Links to URLs are done like this:
@@ -200,6 +234,10 @@ or used directly like this:
 
 <https://www.google.com>
 
+
+Cross references {#sec-cross-references}
+-------------------------------------------------------------------------------
+
 When referring to labeled sections/figures/tables,
 you do not include the literal word "Section", "Figure", or "Table",
 which will be included for you.
@@ -207,30 +245,30 @@ These prefixes/words are configurable in the `meta.yaml` file.
 
 Refer to labeled things like this:
 
--   **for sections:** `See [@sec:footnotes] on footnotes.`     
-    See [@sec:footnotes] on footnotes.
--   **for figures:** `[@fig:scientific_universe] motivates the unity of science.`         
-    [@fig:scientific_universe] motivates the unity of science.
--   **for tables:** `Numbers are in [@tbl:atlas_channels].`        
-    Numbers are in [@tbl:atlas_channels].
--   **for equations:** `The generalized Stokes' theorem, [@eq:stokes], is rad.`          
-    The generalized Stokes' theorem, [@eq:stokes], is rad.
+-   **for sections:** `See @sec-footnotes on footnotes.`     
+    See @sec-footnotes on footnotes.
+-   **for figures:** `@fig-scientific-universe motivates the unity of science.`         
+    @fig-scientific-universe motivates the unity of science.
+-   **for tables:** `Numbers are in @tbl-atlas-channels.`        
+    Numbers are in @tbl-atlas-channels.
+-   **for equations:** `The generalized Stokes' theorem, @eq-stokes, is rad.`          
+    The generalized Stokes' theorem, @eq-stokes, is rad.
 
 TODO: The above references to labels on other pages unfortunately don't work in html,
 but they work in latex/pdf.
 
-You can refer to multiple lables like [@sec:sections;@sec:lists;@sec:blocks] like this:
+You can refer to multiple lables like [@sec-sections;@sec-lists;@sec-blocks] like this:
 
-    [@sec:sections;@sec:lists;@sec:blocks]
+    [@sec-sections;@sec-lists;@sec-blocks]
 
 Automatic grouping into a range doesn't seem to be working (for latex, but does for html),
-so you can also try refer to [Sections @sec:sections]--[-@sec:blocks]
+so you can also try refer to [Sections @sec-sections]--[-@sec-blocks]
 in some versions like this:
 
-    [Sections @sec:sections]--[-@sec:blocks]
+    [Sections @sec-sections]--[-@sec-blocks]
     
 
-Footnotes {#sec:footnotes}
+Footnotes {#sec-footnotes}
 -------------------------------------------------------------------------------
 
     Here's how you do a footnote[^SomeSpecialNote].

@@ -1,42 +1,180 @@
 project:
-  type: website
+#  type: website
+  type: book
   output-dir: docs
+
+
+book:
+  title: "Quarto Example"
+  author: "Ryan Reece"
+  date: today
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - basics.qmd
+    - bibliographies.qmd
+    - math.qmd
+    - figs-tables.qmd
+    - jupyter.qmd
+    - references.qmd
+  appendices:
+    - actions.qmd
+
+  abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+  page-navigation: true
+  site-url: https://rreece.github.io/quarto-example
+  repo-url: https://github.com/rreece/quarto-example
+  favicon: img/markdown-favicon-196x196.png
+  cover-image: img/The-Scream-Munch1893.png
+
+  sidebar:
+    style: docked
+    search: true
+#    tools:
+#      - icon: github
+#        href: https://github.com/rreece/quarto-example
+#    footer: "Copyright\n&copy; 2024 Ryan Reece"
+
+#  navbar:
+#    search: true
+#    left:
+#      - text: "Home"
+#        href: index.qmd
+#      - about.qmd
+#    right:
+#      - icon: github
+#        href: https://github.com/rreece/quarto-example
+#        aria-label: GitHub
+#      - icon: twitter
+#        href: https://x.com/RyanDavidReece
+#        aria-label: Twitter
+
+  page-footer:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "About"
+        href: about.qmd
+    center:
+      - text: "&copy; 2024 Ryan Reece"
+        href: license.qmd
+    right:
+      - text: "Made with quarto-example"
+        href: https://github.com/rreece/quarto-example
+
 
 website:
   title: "Quarto Example"
-  navbar:
-    search: true
-    left:
-      - about.qmd
-    tools:
-      - icon: twitter
-        href: https://x.com/RyanDavidReece
-      - icon: github
-        href: https://github.com/rreece/quarto-example
+
+  page-navigation: true
+  site-url: https://rreece.github.io/quarto-example
+  repo-url: https://github.com/rreece/quarto-example
+  favicon: img/markdown-favicon-196x196.png
+
+#  image: "quarto-dark-bg.jpeg"
+#  favicon: "favicon.png"
+#  google-analytics: "G-FV9Z7SDZ0M"
+#  open-graph: true
+#  twitter-card: true
+#  site-url: https://quarto.org
+#  repo-url: https://github.com/quarto-dev/quarto-web
+#  issue-url: https://github.com/quarto-dev/quarto-cli/issues/new/choose
+#  repo-actions: [edit, issue]
+#  bread-crumbs: tru
+
+#  navbar:
+#    search: true
+#    left:
+#      - text: "Home"
+#        href: index.qmd
+#      - about.qmd
+#    tools:
+#      - icon: github
+#        href: https://github.com/rreece/quarto-example
+#      - icon: twitter
+#        href: https://x.com/RyanDavidReece
+
   sidebar:
-    style: "docked"
+    style: docked
+    search: true
     contents:
+      - index.qmd
       - intro.qmd
       - basics.qmd
       - bibliographies.qmd
       - math.qmd
       - figs-tables.qmd
       - jupyter.qmd
+      - references.qmd
+#    tools:
+#      - icon: github
+#        href: https://github.com/rreece/quarto-example
+
 
 format:
   html:
-    theme: flatly
+    theme:
+      light: flatly
+      dark: darkly
     toc: true
     toc-depth: 2
+    toc-title: "Contents"
     toc-location: left
-    fontsize: 1.2em
-    code-fold: true
-    self-contained: true
+#    toc-expand: 1
+    number-sections: true
+#    number-depth: 3
+#    fontsize: 1.1em
+    mainfont: Georgia, Palatino, serif
     grid:
-      margin-width: 350px
+      sidebar-width: 250px
+      body-width: 800px
+      margin-width: 300px
+      gutter-width: 1.5em
     html-math-method: mathjax
+    code-fold: true
+    anchor-sections: true
+    smooth-scroll: true
+    citations-hover: true
+    footnotes-hover: true
+    crossrefs-hover: true
+    highlight-style: "github"
+#    monobackgroundcolor: "#999999"
+    self-contained: false
+    embed-resources: false
+    self-contained-math: false
+
+  pdf:
+    pdf-engine: pdflatex
+    latex-tinytex: true
+#    keep-tex: true
+    documentclass: scrreprt
+    papersize: letter
+    toc: true
+    toc-depth: 2
+    toc-title: "Contents"
+    number-sections: true
+#    number-depth: 3
+    fontfamily: "mathpazo"
+    colorlinks: true
+
+
+crossref:
+  fig-title: "Figure"
+  tbl-title: "Table"
+  eq-prefix: "eq."
+  title-delim: ":"
+
+
+bibliography: bibs/mybib.bib
+csl: templates/apa-no-doi-no-issue-with-notes.csl
+reference-location: margin
+citation-location: document
+link-citations: true
+
 
 execute:
   eval: false
   echo: fenced
+  freeze: auto
 

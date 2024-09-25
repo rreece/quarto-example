@@ -1,13 +1,11 @@
 ---
-title: "About"
+title: "License"
 date: 2024-09-21
 number-sections: false
 ---
 
-Author: [Ryan Reece](https://rreece.github.io/)
 
-
-{{< lipsum 2 >}}
+{{< include LICENSE >}}
 
 
 -------------

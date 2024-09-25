@@ -1,7 +1,8 @@
 ---
 title: "Introduction"
-subtitle: "This is a subtitle"
+subtitle: "Writing with quarto"
 date: today
+number-sections: false
 ---
 
 
@@ -11,7 +12,52 @@ What this is for
 This is a starter template for using [quarto](https://quarto.org/).
 It seems to achieve a lot of what I was trying to do with
 [markdown-memo](https://github.com/rreece/markdown-memo) and
-[markdown-easy](https://github.com/rreece/markdown-easy)---make
-technical and scholarly writing easier and more productive.
+[markdown-easy](https://github.com/rreece/markdown-easy):
+*make technical and scholarly writing easier and more productive*.
+
+So you want to write a document.
+Maybe you'll share it on the web.
+Maybe you want a polished pdf. 
+Maybe it's a blog, research paper, book draft, or just a set of notes.
+You don't want to think about typesetting details.
+You just want to throw your ideas in some plain text files and call `make`.
+
+See the README for [quarto-example](https://github.com/rreece/quarto-example)
+for how to compile the document to html or pdf.
+
+
+See also
+--------------------------------------------
+
+Quarto links:
+
+-   [quarto.org](https://quarto.org/)
+-   [quarto example using math](https://github.com/quarto-dev/quarto-examples/tree/main/html-math)
+-   [quarto using bibtex and CSL](https://github.com/quarto-dev/quarto-examples/tree/main/appendix-csl)
+-   [quarto doc about github-pages](https://quarto.org/docs/publishing/github-pages.html)
+-   [example `_quarto.yml`](https://github.com/quarto-dev/quarto-web/blob/main/_quarto.yml)
+
+My projects:
+
+-   [github.com/rreece/quarto-example](https://github.com/rreece/quarto-example)
+-   [github.com/rreece/markdown-easy](https://github.com/rreece/markdown-easy)
+-   [github.com/rreece/markdown-memo](https://github.com/rreece/markdown-memo)
+
+Pandoc links:
+
+-   [pandoc.org/README.html](http://pandoc.org/README.html)
+-   [commonmark.org](http://commonmark.org/)
+-   [github.com/lierdakil/pandoc-crossref](https://github.com/lierdakil/pandoc-crossref)
+
+Other examples/blogs of writing with markdown:
+
+-   [programminghistorian.org/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown](http://programminghistorian.org/lessons/sustainable-authorship-in-plain-text-using-pandoc-and-markdown)
+-   [kprussing.github.io/writing-with-markdown](https://web.archive.org/web/20171026174128/http://kprussing.github.io/writing-with-markdown/)
+-   [scholarlymarkdown.com](http://scholarlymarkdown.com/)
+-   [github.com/simov/markdown-syntax](https://github.com/simov/markdown-syntax/blob/main/mermaid.md)
+-   [markdownguide.org](https://www.markdownguide.org/getting-started/) --- source: [github.com/mattcone/markdown-guide-book](https://github.com/mattcone/markdown-guide-book/blob/master/manuscript/chapter3.md)
+-   [github.com/gabyx/Technical-Markdown](https://github.com/gabyx/Technical-Markdown)
+-   [mdBook](https://rust-lang.github.io/mdBook/)
+-   [MkDocs](https://www.mkdocs.org/)
 
 

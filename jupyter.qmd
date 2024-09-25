@@ -5,9 +5,6 @@ date: today
 execute:
   eval: true
   echo: fenced
-reference-location: margin
-citation-location: margin
-bibliography: skeleton.bib
 jupyter: python3
 ---
 

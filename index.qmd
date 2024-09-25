@@ -1,7 +1,5 @@
----
-title: "Quarto Example"
-date: today
----
 
-Title page.
+## Preface {.unnumbered}
+
+{{< lipsum 3 >}}
 

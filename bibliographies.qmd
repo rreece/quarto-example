@@ -4,8 +4,6 @@ date: today
 ---
 
 
-<!-- PAGETOC -->
-
 Making a bibliography
 -------------------------------------------------------------------------------
 
@@ -49,12 +47,6 @@ and you want to write your own bibtex,
 then simply remove any `bibs/*.txt` files
 and write a file called `bibs/mybib.bib`.
 
-If you do not need a bibliography, set
-
-    dorefs: false
-
-in `meta.yaml`, and then these scripts and programs are not run.
-
 
 Doing citations
 -------------------------------------------------------------------------------
@@ -85,20 +77,6 @@ Van[^vanFraassen1980] is a cool cat too.
 A reference with more than 4 authors should be automatically shortened with
 *et al.*[^Guest2016]
 
-In order for a References section to be generated per html page, you need to
-add a special html comment near the end of your Markdown file for that page:
-
-    <!-- REFERENCES -->
-
-Pages without such a comment will not get an automatic References section,
-but the complete pdf document will automatically still have a complete References
-section at the end as long as
-
-    dorefs: true
-
-is set in `meta.yaml`.
-
-
 [^Feynman1965]: @Feynman_1965_The_Development_of_the_Space_Time_View_of_Quantum\.
 [^Guest2016]: @Guest_2016_Jet_flavor_classification_in_high_energy_physics\.
 [^Plato2000]: @Plato_2000_The_Republic\.
@@ -106,4 +84,4 @@ is set in `meta.yaml`.
 [^vanFraassen1980]: @vanFraassen_1980_The_Scientific_Image\.
 
 
-<!-- REFERENCES -->
+

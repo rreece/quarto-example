@@ -1,5 +1,18 @@
 
 ## Preface {.unnumbered}
 
-{{< lipsum 3 >}}
+I've always been looking for the tool that would help
+technical and scholarly writing flow in a Markdown-driven way.
+Managing figures, tables, equations, and bibliographies.
+Generating html, latex, or pdf.
+
+I had previous hand-rolled my own projects to this:
+[markdown-memo](https://github.com/rreece/markdown-memo),
+which I was trying to trim down into
+[markdown-easy](https://github.com/rreece/markdown-easy).
+
+Then I discovered the [quarto](https://quarto.org)
+project that is very similar in spirit and has already
+accomplished what I was trying to get to.
+And they have a growing community.
 

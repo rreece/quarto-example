@@ -39,7 +39,6 @@ Quarto links:
 
 My projects:
 
--   [github.com/rreece/quarto-example](https://github.com/rreece/quarto-example)
 -   [github.com/rreece/markdown-easy](https://github.com/rreece/markdown-easy)
 -   [github.com/rreece/markdown-memo](https://github.com/rreece/markdown-memo)
 

@@ -34,13 +34,12 @@ jobs:
         with:
           python-version: '3.10'
           cache: 'pip'
+
       - run: pip install jupyter
+
       - run: pip install -r requirements.txt
 
-	  - name: Render Quarto Project
-	    uses: quarto-dev/quarto-actions/render@v2
-	    with:
-	      to: html
+      - run: quarto render --to html
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

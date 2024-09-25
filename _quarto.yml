@@ -20,7 +20,12 @@ book:
   appendices:
     - actions.qmd
 
-  abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  abstract: |
+    This is an example document discussing and demonstrating
+    how to use the quarto package to create quality html and pdf
+    documents from simple Markdown markup.
+    Ryan Reece develops quarto-example at
+    [github.com/rreece/quarto-example](https://github.com/rreece/quarto-example).
 
   page-navigation: true
   site-url: https://rreece.github.io/quarto-example

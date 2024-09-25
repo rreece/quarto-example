@@ -38,7 +38,7 @@ See also
 
 Quarto links:
 
--   [quarto.org](https://quarto.org/)
+-   [quarto.org](https://quarto.org/) - [Guide](https://quarto.org/docs/guide/) - [Reference](https://quarto.org/docs/reference/)
 -   [quarto example using math](https://github.com/quarto-dev/quarto-examples/tree/main/html-math)
 -   [quarto using bibtex and CSL](https://github.com/quarto-dev/quarto-examples/tree/main/appendix-csl)
 -   [quarto doc about github-pages](https://quarto.org/docs/publishing/github-pages.html)

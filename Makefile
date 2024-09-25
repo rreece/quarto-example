@@ -3,7 +3,7 @@
 PRINT = @echo '==>  '
 
 QMD_FILES := $(wildcard *.qmd)
-HTML_FILES := $(QMD_FILES:%.qmd=docs/%.html)
+HTML_FILES := $(QMD_FILES:%.qmd=_site/%.html)
 BIB_TXT_FILES := $(sort $(wildcard bibs/*.txt))
 
 .PHONY: all html project_html pdf publish clean realclean
@@ -14,7 +14,7 @@ all: project_html
 #html: $(HTML_FILES)
 html: project_html
 
-docs/%.html: %.qmd _quarto.yml bibs/mybib.bib
+_site/%.html: %.qmd _quarto.yml bibs/mybib.bib
 	quarto render $< --to html --no-clean --quiet
 	$(PRINT) "make $@ done."
 
@@ -55,7 +55,8 @@ clean:
 	$(PRINT) "make $@ done."
 
 ## clean up everything including the output
-OUTS = docs _freeze bibs/mybib.bib jupyter_files
+#OUTS = _site _freeze jupyter_files bibs/mybib.bib
+OUTS = _site _freeze jupyter_files
 
 realclean: clean
 	rm -rf $(OUTS)

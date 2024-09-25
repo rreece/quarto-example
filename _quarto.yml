@@ -1,7 +1,6 @@
 project:
-#  type: website
   type: book
-  output-dir: docs
+  output-dir: _site
 
 
 book:
@@ -32,6 +31,9 @@ book:
   repo-url: https://github.com/rreece/quarto-example
   favicon: img/markdown-favicon-196x196.png
   cover-image: img/The-Scream-Munch1893.png
+
+#  image: "quarto-dark-bg.jpeg"
+#  google-analytics: "G-FV9Z7SDZ0M"
 
   sidebar:
     style: docked
@@ -67,54 +69,6 @@ book:
     right:
       - text: "Made with quarto-example"
         href: https://github.com/rreece/quarto-example
-
-
-website:
-  title: "Quarto Example"
-
-  page-navigation: true
-  site-url: https://rreece.github.io/quarto-example
-  repo-url: https://github.com/rreece/quarto-example
-  favicon: img/markdown-favicon-196x196.png
-
-#  image: "quarto-dark-bg.jpeg"
-#  favicon: "favicon.png"
-#  google-analytics: "G-FV9Z7SDZ0M"
-#  open-graph: true
-#  twitter-card: true
-#  site-url: https://quarto.org
-#  repo-url: https://github.com/quarto-dev/quarto-web
-#  issue-url: https://github.com/quarto-dev/quarto-cli/issues/new/choose
-#  repo-actions: [edit, issue]
-#  bread-crumbs: tru
-
-#  navbar:
-#    search: true
-#    left:
-#      - text: "Home"
-#        href: index.qmd
-#      - about.qmd
-#    tools:
-#      - icon: github
-#        href: https://github.com/rreece/quarto-example
-#      - icon: twitter
-#        href: https://x.com/RyanDavidReece
-
-  sidebar:
-    style: docked
-    search: true
-    contents:
-      - index.qmd
-      - intro.qmd
-      - basics.qmd
-      - bibliographies.qmd
-      - math.qmd
-      - figs-tables.qmd
-      - jupyter.qmd
-      - references.qmd
-#    tools:
-#      - icon: github
-#        href: https://github.com/rreece/quarto-example
 
 
 format:

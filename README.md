@@ -87,9 +87,10 @@ Documentation:
 
 Build:
 
-- [ ] GitHub Actions for testing for build artifacts before deployment
-- [ ] Change GitHub Actions to use this Makefile
+- [x] GitHub Actions for testing for build artifacts before deployment
+- [x] Change GitHub Actions to use this Makefile
 - [ ] Conditionally build different parts of the document 
+- [ ] Automatically get Makefile variables from `_quarto.yml`
 - [ ] Make bibliography optional
 - [ ] Makefile target for starting a new document
 - [ ] Make it easy to create a small single page doc

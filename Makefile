@@ -2,8 +2,11 @@
 
 PRINT = @echo '==>  '
 
+# TODO: automatically get these from _quarto.yml
+OUTPUT := Quarto-Example
 OUTDIR := _site
 BIBLIO := bibs/mybib.bib
+
 QMD_FILES := $(wildcard *.qmd)
 HTML_FILES := $(QMD_FILES:%.qmd=$(OUTDIR)/%.html)
 BIB_TXT_FILES := $(sort $(wildcard bibs/*.txt))

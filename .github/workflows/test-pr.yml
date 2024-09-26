@@ -1,22 +1,19 @@
-name: "quarto build & gh-pages deploy"
+name: "quarto build & test"
 
 on:
   workflow_dispatch:
-  push:
-    branches: main
+  pull_request:
+    branches: [ "main" ]
+    paths-ignore:
+      - "LICENSE"
+      - "README.md"
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 jobs:
-  build-deploy:
+  build-test:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -49,17 +46,4 @@ jobs:
 
       - name: "Test for pdf: make check_pdf"
         run:  make check_pdf
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload this directory
-          path: '_site/'
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
 

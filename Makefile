@@ -11,7 +11,7 @@ QMD_FILES := $(wildcard *.qmd)
 HTML_FILES := $(QMD_FILES:%.qmd=$(OUTDIR)/%.html)
 BIB_TXT_FILES := $(sort $(wildcard bibs/*.txt))
 
-.PHONY: all html project_html pdf publish clean realclean
+.PHONY: all html project_html pdf bib clean realclean check check_pdf publish
 
 all: project_html
 
@@ -35,6 +35,8 @@ pdf: $(QMD_FILES) _quarto.yml $(BIBLIO)
 
 
 ## create bibs/mybib.bib from bibs/*.txt
+bib: $(BIBLIO)
+
 $(BIBLIO): $(BIB_TXT_FILES)
 	@if [ -z "$(BIB_TXT_FILES)" ] ; \
 	then \

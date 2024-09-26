@@ -32,7 +32,8 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - run: python scripts/markdown2bib.py --out=bibs/mybib.bib bibs/*.txt
+      - name: "Make the bibliography"
+        run: make bib
 
       - name: "Render html with quarto"
         run: make

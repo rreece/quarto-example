@@ -17,13 +17,11 @@ For example,
         of science. CC BY-SA 3.0 (2013) [Wikimedia Commons](https://en.wikipedia.org/wiki/Science#/media/File:The_Scientific_Universe.png).
         ](img/1024px-the-scientific-universe.png){#fig-scientific-universe}
 
-produces:
+produces @fig-scientific-universe.
 
 ![The scale of the universe mapped to the branches of science and the hierarchy of science. CC BY-SA 3.0 (2013)
     [Wikimedia Commons](https://en.wikipedia.org/wiki/Science#/media/File:The_Scientific_Universe.png).
     ](img/1024px-the-scientific-universe.png){#fig-scientific-universe}
-
-[@Fig-scientific-universe] shows some cool things.
 
 Lorem ipsum dolor sit amet, duo ut putant verear, nam ut brute utroque.
 Officiis qualisque conceptam te duo, eu vim soluta numquam, has ut aliquip
@@ -44,24 +42,30 @@ Another example:
         SM Higgs boson signal at that mass with its $\pm{}1\sigma$ band.
         The horizontal dashed lines indicate the $p$-values corresponding to significances
         of 1 to 6$\sigma$\ [@ATLAS_2012_Observation_of_a_new_particle_in_the_search]\.
-        ](img/ATLAS-local-p0-vs-mH.png){#fig-ATLAS-local-p0-vs-mH}
+        ](img/ATLAS-local-p0-vs-mH){#fig-ATLAS-local-p0-vs-mH}
 
-produces:
+produces @fig-ATLAS-local-p0-vs-mH.
 
 ![The observed (solid) local $p_{0}$ as a function of $m_{H}$ in the low mass range.
     The dashed curve shows the expected local $p_{0}$ under the hypothesis of a
     SM Higgs boson signal at that mass with its $\pm{}1\sigma$ band.
     The horizontal dashed lines indicate the $p$-values corresponding to significances
     of 1 to 6$\sigma$\ [@ATLAS_2012_Observation_of_a_new_particle_in_the_search]\.
-    ](img/ATLAS-local-p0-vs-mH.png){#fig-ATLAS-local-p0-vs-mH}
+    ](img/ATLAS-local-p0-vs-mH){#fig-ATLAS-local-p0-vs-mH}
 
+Note that by leaving the file suffix implied, `img/ATLAS-local-p0-vs-mH`,
+quarto will automatically pick the available png or jpg when producing html output,
+but will prefer an available pdf figure when producing pdf. [^PdfAllowsVectorGraphics]
+
+[^PdfAllowsVectorGraphics]: This allows us to include vector graphics images in pdf format when
+    producing pdf output, whereas when producing html, we use rasterized formats: jpg or pdf.
 
 You can refer to labeled figures like this:
 
-    [@fig-ATLAS-local-p0-vs-mH] shows the $p_{0}$ value as a function of the reconstructed
+    @fig-ATLAS-local-p0-vs-mH shows the $p_{0}$ value as a function of the reconstructed
     Higgs mass from the ATLAS experiment.
 
-[@fig-ATLAS-local-p0-vs-mH] shows the $p_{0}$ value as a function of the reconstructed
+@fig-ATLAS-local-p0-vs-mH shows the $p_{0}$ value as a function of the reconstructed
 Higgs mass from the ATLAS experiment.
 
 

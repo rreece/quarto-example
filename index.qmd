@@ -1,8 +1,9 @@
 
 ## Preface {.unnumbered}
 
-I've always been looking for the tool that would help
-technical and scholarly writing flow in a Markdown-driven way.
+I've always been looking for the right tool that would help
+technical and scholarly writing flow in a
+[Markdown](https://daringfireball.net/projects/markdown/)-driven way.
 Managing figures, tables, equations, and bibliographies.
 Generating html, latex, or pdf.
 
@@ -13,6 +14,6 @@ which I was trying to update and trim down into
 
 Then I discovered the [quarto](https://quarto.org)
 project that is very similar in spirit and has already
-accomplished what I was trying to get to.
+accomplished a lot of what I was trying to do.
 And they have a growing community.
 

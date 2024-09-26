@@ -27,3 +27,8 @@ ax.set_rticks([0.5, 1, 1.5, 2])
 ax.grid(True)
 plt.show()
 ```
+
+This is executable code above, actually executed to generate @fig-polar
+on the fly when building the document!
+
+

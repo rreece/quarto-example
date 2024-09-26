@@ -1,0 +1,14 @@
+---
+title: "Conclusion"
+date: today
+---
+
+This project is meant to make writing easier and more productive.
+
+[quarto-example](https://github.com/rreece/quarto-example)
+is developed by [Ryan Reece](http://rreece.github.io/).
+
+Let me know what you think at [github.com/rreece/quarto-example](https://github.com/rreece/quarto-example)
+or Twitter [&#64;RyanDavidReece](https://twitter.com/RyanDavidReece).
+
+

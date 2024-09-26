@@ -9,12 +9,6 @@ number-sections: false
 What this is for
 --------------------------------------------
 
-This is a starter template for using [quarto](https://quarto.org/).
-It seems to achieve a lot of what I was trying to do with
-[markdown-memo](https://github.com/rreece/markdown-memo) and
-[markdown-easy](https://github.com/rreece/markdown-easy):
-*make technical and scholarly writing easier and more productive*.
-
 So you want to write a document.
 Maybe you'll share it on the web.
 Maybe you want a polished pdf. 
@@ -22,10 +16,19 @@ Maybe it's a blog, research paper, book draft, or just a set of notes.
 You don't want to think about typesetting details.
 You just want to throw your ideas in some plain text files and call `make`.
 
+This is a starter template for using [quarto](https://quarto.org/),
+following the quarto
+[Get Started](https://quarto.org/docs/get-started/hello/text-editor.html).
+It seems to achieve a lot of what I was trying to do with my
+similar projects,
+[markdown-memo](https://github.com/rreece/markdown-memo) and
+[markdown-easy](https://github.com/rreece/markdown-easy):
+*make technical and scholarly writing easier and more productive*.
+
 This package makes it very easy to compile text taken in
 [Markdown](https://daringfireball.net/projects/markdown/)
 to valid xhtml or to a pdf via LaTeX.
-It can be used to make simple webpages quickly,
+It can be used to make static webpages quickly,
 for example (this site):    
 <https://rreece.github.io/quarto-example/>
 

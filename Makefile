@@ -11,13 +11,12 @@ BIB_TXT_FILES := $(sort $(wildcard bibs/*.txt))
 all: project_html
 
 ## create html
-#html: $(HTML_FILES)
-html: project_html
+html: $(HTML_FILES)
+	$(PRINT) "make $@ done."
 
 _site/%.html: %.qmd _quarto.yml bibs/mybib.bib
 	quarto render $< --to html --no-clean --quiet
 	$(PRINT) "make $@ done."
-
 
 project_html: $(QMD_FILES) _quarto.yml bibs/mybib.bib
 	quarto render --to html
@@ -48,14 +47,14 @@ publish: html
 
 
 ## clean up
-JUNK = *.log
+JUNK = *.log index_files jupyter_files
 
 clean:
-	rm -f $(JUNK)
+	rm -rf $(JUNK)
 	$(PRINT) "make $@ done."
 
 ## clean up everything including the output
-OUTS = _site _freeze jupyter_files bibs/mybib.bib
+OUTS = _site _freeze bibs/mybib.bib
 
 realclean: clean
 	rm -rf $(OUTS)

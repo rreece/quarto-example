@@ -32,31 +32,12 @@ book:
   repo-url: https://github.com/rreece/quarto-example
   favicon: img/markdown-favicon-196x196.png
   cover-image: img/The-Scream-Munch1893.png
-
 #  image: "quarto-dark-bg.jpeg"
 #  google-analytics: "G-FV9Z7SDZ0M"
 
   sidebar:
     style: docked
     search: true
-#    tools:
-#      - icon: github
-#        href: https://github.com/rreece/quarto-example
-#    footer: "Copyright\n&copy; 2024 Ryan Reece"
-
-#  navbar:
-#    search: true
-#    left:
-#      - text: "Home"
-#        href: index.qmd
-#      - about.qmd
-#    right:
-#      - icon: github
-#        href: https://github.com/rreece/quarto-example
-#        aria-label: GitHub
-#      - icon: twitter
-#        href: https://x.com/RyanDavidReece
-#        aria-label: Twitter
 
   page-footer:
     left:
@@ -100,24 +81,45 @@ format:
     footnotes-hover: true
     crossrefs-hover: true
     highlight-style: "github"
-#    monobackgroundcolor: "#999999"
     self-contained: false
     embed-resources: false
     self-contained-math: false
+    reference-location: margin
+    citation-location: document
 
   pdf:
+    output-file: "quarto-example"
+    output-ext: "pdf"
     pdf-engine: pdflatex
     latex-tinytex: true
 #    keep-tex: true
     documentclass: scrreprt
-    papersize: letter
+#    documentclass: memoir
+#    classoption:
+#      - "letterpaper"
+#      - "openany"
+#      - "twoside"
+#      - "headings=big"
+#    papersize: letter
+    geometry: 
+      - "paperwidth=8.5in"
+      - "paperheight=11in"
+      - "top=1.25in"
+      - "bottom=1.25in"
+      - "left=1.5in"
+      - "right=1.5in"
+      - "headheight=14pt"
+      - "headsep=14pt"
     toc: true
     toc-depth: 2
     toc-title: "Contents"
     number-sections: true
 #    number-depth: 3
     fontfamily: "mathpazo"
+#    fontfamily: "mathptmx"
     colorlinks: true
+    reference-location: block
+    citation-location: document
 
 
 crossref:
@@ -129,8 +131,6 @@ crossref:
 
 bibliography: bibs/mybib.bib
 csl: templates/apa-no-doi-no-issue-with-notes.csl
-reference-location: margin
-citation-location: document
 link-citations: true
 
 

@@ -65,16 +65,18 @@ realclean: clean
 ## check that outputs exists for tests
 check:
 	@if [ ! -f $(OUTDIR)/index.html ]; then \
-		echo "Error: index.html does not exist." ; \
+		echo "Error: $(OUTDIR)/index.html does not exist." ; \
 		exit 1 ; \
 	fi
+	$(PRINT) "Checked. $(OUTDIR)/index.html exists."
 	$(PRINT) "make $@ done."
 
 check_pdf:
 	@if [ ! -f $(OUTDIR)/$(OUTPUT).pdf ]; then \
-		echo "Error: $(OUTPUT).pdf does not exist." ; \
+		echo "Error: $(OUTDIR)/$(OUTPUT).pdf does not exist." ; \
 		exit 1 ; \
 	fi
+	$(PRINT) "Checked. $(OUTDIR)/$(OUTPUT).pdf exists."
 	$(PRINT) "make $@ done."
 
 

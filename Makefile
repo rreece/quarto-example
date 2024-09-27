@@ -1,4 +1,14 @@
 ## Makefile for quarto-example
+##
+##-----------------------------------------------------------------------------
+
+SHELL := /bin/bash
+.SHELLFLAGS := -eu -o pipefail -c
+
+
+##-----------------------------------------------------------------------------
+## helpers and settings
+##-----------------------------------------------------------------------------
 
 PRINT = @echo '==>  '
 
@@ -7,9 +17,16 @@ OUTPUT := Quarto-Example
 OUTDIR := _site
 BIBLIO := bibs/mybib.bib
 
+#OUTPUT := $(shell grep '^output:'_quarto.yml | head -n1 | sed -e 's/output:[[:space:]]*//' | tr -d "'" | tr -d '"')
+
 QMD_FILES := $(wildcard *.qmd)
 HTML_FILES := $(QMD_FILES:%.qmd=$(OUTDIR)/%.html)
 BIB_TXT_FILES := $(sort $(wildcard bibs/*.txt))
+
+
+##-----------------------------------------------------------------------------
+## main targets
+##-----------------------------------------------------------------------------
 
 .PHONY: all html project_html pdf bib clean realclean check check_pdf publish
 
@@ -34,7 +51,7 @@ pdf: $(QMD_FILES) _quarto.yml $(BIBLIO)
 	$(PRINT) "make $@ done."
 
 
-## create bibs/mybib.bib from bibs/*.txt
+## create bibliography
 bib: $(BIBLIO)
 
 $(BIBLIO): $(BIB_TXT_FILES)

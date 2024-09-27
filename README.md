@@ -84,16 +84,20 @@ TODOs
 Documentation:
 
 - [ ] Finish Quick start in this README
+- [ ] Better example of making plots through jupyter
+- [ ] Make a table by reading csv?
 
 Build:
 
 - [x] GitHub Actions for testing for build artifacts before deployment
 - [x] Change GitHub Actions to use this Makefile
-- [ ] Conditionally build different parts of the document 
+- [x] Conditionally build different parts of the document: `make html`
+- [ ] Make pdf output-file configurable?
 - [ ] Automatically get Makefile variables from `_quarto.yml`
 - [ ] Make bibliography optional
 - [ ] Makefile target for starting a new document
-- [ ] Make it easy to create a small single page doc
+- [ ] Make it easy to create a small single page doc/webpage
+- [ ] Support rendering a document from `./` with no sub-directories?
 
 Rendering issues:
 
@@ -103,7 +107,11 @@ Style:
 
 - [x] Add `_quarto.yaml` settings for custom css
 - [ ] Add `_quarto.yaml` settings for latex styling
-- [ ] Polish book pdf output
+    - [ ] Shrink fontsize for code
+- [ ] Pollish book pdf output
+- [ ] Config for making an article instead of a book
+- [ ] Config for making an website instead of a book
+- [ ] Template for article (e.g. [NeurIPS](https://www.overleaf.com/latex/templates/neurips-2024/tpsbbrdqcmsh))
 
 
 Note these quarto issues

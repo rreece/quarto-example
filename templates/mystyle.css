@@ -10,20 +10,29 @@ pre {
     border-bottom: 2px solid #cccccc;
     border-left: 2px solid black;
     padding: 10px 10px;
-    max-width: 700px;
+    max-width: auto;
     white-space: pre-wrap;
     background-color: #444444;
-    color: white;
 }
-code {
+
+pre code {
+    color: white;
     font-family: Consolas, Monaco, "Andale Mono", monospace;
-    line-height: 16px;
-    font-size: 12px;
+    font-size: 0.8em;
+    line-height: 1.25em;
     text-align: left;
 }
 
+/* poetry (line-block) -------------------------------------------- */
 
-/* references ------------------------------------------------------- */
+div.line-block {
+    margin-top: 1.0em;
+    margin-bottom: 1.0em;
+    line-height: 1.25em;
+}
+
+
+/* references ----------------------------------------------------- */
 
 div#refs
 {

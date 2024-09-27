@@ -175,7 +175,6 @@ can be used, but will indent the output.
 | Opportunity fleeting,
 | Experiment dangerous,
 | Judgment difficult.
-        
 
 Otherwise, one can put two or more spaces at the end of a line of Markdown
 for the linebreak to be taken literally  
@@ -184,9 +183,9 @@ this.
 
 A **horizontal rule** can be made by just writing some number of dashes:
 
-    ----------------------------------------------------
+    --------------------
 
-----------------------------------------------------
+--------------------
 
 Boom.
 

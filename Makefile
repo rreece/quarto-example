@@ -106,7 +106,7 @@ check_pdf:
 ## Be careful using these destructive targets
 
 destroy: realclean
-	rm -f *.md
+	rm -f *.md *qmd
 	$(PRINT) "make $@ done."
 
 destroygit: 
@@ -114,6 +114,18 @@ destroygit:
 	$(PRINT) "make $@ done."
 
 newdoc: destroy destroygit
+	$(PRINT) "Writing new README.md"
+	@echo "My new document" > README.md
+	@echo "============================================" >> README.md
+	@echo "" >> README.md
+	@echo "TODO: put a build & deploy badge here" >> README.md
+	@echo "" >> README.md
+	@echo "My section" >> README.md
+	@echo "--------------------------------------------" >> README.md
+	@echo "" >> README.md
+	@echo "My writing" >> README.md
+	@echo "" >> README.md
+	$(PRINT) "Writing new intro.qmd"
 	@echo "---" > intro.qmd
 	@echo "title: \"Introduction\"" > intro.qmd
 	@echo "subtitle: \"Writing with quarto\"" >> intro.qmd

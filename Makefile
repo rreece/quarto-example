@@ -28,7 +28,7 @@ BIB_TXT_FILES := $(sort $(wildcard bibs/*.txt))
 ## main targets
 ##-----------------------------------------------------------------------------
 
-.PHONY: all html project_html pdf bib clean realclean check check_pdf publish
+.PHONY: all html project_html pdf bib clean realclean check check_pdf publish destroy destroygit newdoc
 
 all: project_html
 

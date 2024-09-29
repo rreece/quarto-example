@@ -101,3 +101,31 @@ check_pdf:
 #publish: html
 #	quarto publish gh-pages --no-prompt --no-browser
 
+
+##-----------------------------------------------------------------------------
+## Be careful using these destructive targets
+
+destroy: realclean
+	rm -f *.md
+	$(PRINT) "make $@ done."
+
+destroygit: 
+	rm -rf .git
+	$(PRINT) "make $@ done."
+
+newdoc: destroy destroygit
+	@echo "---" > intro.qmd
+	@echo "title: \"Introduction\"" > intro.qmd
+	@echo "subtitle: \"Writing with quarto\"" >> intro.qmd
+	@echo "date: today" >> intro.qmd
+	@echo "number-sections: false" >> intro.qmd
+	@echo "---" >> intro.qmd
+	@echo "" >> intro.qmd
+	@echo "Hello world" >> intro.qmd
+	@echo "--------------------------------------------" >> intro.qmd
+	@echo "" >> intro.qmd
+	@echo "Start writing here." >> intro.qmd
+	@echo "" >> intro.qmd
+	$(PRINT) "make $@ done."
+
+

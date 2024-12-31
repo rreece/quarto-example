@@ -8,3 +8,6 @@ Plato. (2000). *The Republic*. (G. Ferrari, Ed. & T. Griffith, Trans.). Cambridg
 Quine, W.V.O. (1960). Carnap and logical truth. *Synthese*, 12, 350--374.
 Quine, W.V.O. (1969). Natural kinds. In *Ontological Relativity and Other Essays* (pp. 114--138). Columbia University Press.
 van Fraassen, B. (1980). *The Scientific Image*. Oxford University Press.
+
+Knuth, D.E. (1984). Literate programming. *The Computer Journal*, 27, 97--111.
+Wickham, H. (2015). *R packages*. O'Reilly Media.

@@ -128,7 +128,6 @@ newdoc: destroy destroygit
 	$(PRINT) "Writing new intro.qmd"
 	@echo "---" > intro.qmd
 	@echo "title: \"Introduction\"" > intro.qmd
-	@echo "subtitle: \"Writing with quarto\"" >> intro.qmd
 	@echo "date: today" >> intro.qmd
 	@echo "number-sections: false" >> intro.qmd
 	@echo "---" >> intro.qmd

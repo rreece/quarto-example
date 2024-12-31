@@ -92,7 +92,7 @@ format:
     output-ext: "pdf"
     pdf-engine: pdflatex
     latex-tinytex: true
-#    keep-tex: true
+    keep-tex: true
 #    documentclass: memoir
     documentclass: report
     classoption:

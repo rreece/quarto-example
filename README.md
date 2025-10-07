@@ -132,6 +132,7 @@ Quarto links:
 -   [quarto using bibtex and CSL](https://github.com/quarto-dev/quarto-examples/tree/main/appendix-csl)
 -   [quarto doc about github-pages](https://quarto.org/docs/publishing/github-pages.html)
 -   [example `_quarto.yml`](https://github.com/quarto-dev/quarto-web/blob/main/_quarto.yml)
+-   [Quarto for Scientists](https://qmd4sci.njtierney.com/)
 
 My projects:
 
